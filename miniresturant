@@ -1,0 +1,90 @@
+#include<stdio.h>
+
+int main()
+{
+    int item, size, req;
+    char yes;
+    printf("Hi, Which food item you want to have?\n");
+    printf("Availabilities:\n 1- pizza \n 2- burger \n 3- pasta \n 4- frenchfries \n 5- sandwich\n");
+    scanf("%d", &item);
+    printf("select the size required:\n 1-small or 2-large\n");
+    scanf("%d", &size);
+    printf("any req. in the items?\n 1-aloo and 2-onion\n");
+    scanf("%d", &req);
+    switch (item)
+
+    {
+    case 1:
+        printf("choice: pizza\n");
+        switch (size)
+        {
+        case 1:
+            printf("u have choosen small\n");
+            printf("price: Rs.45\n");
+            break;
+        case 2:
+        printf("u have choosen large\n");
+        printf("price: Rs.180\n");
+        break;
+        }
+        break;
+    case 2:
+        printf("choice: Burger \n");
+         switch (size)
+        {
+        case 1:
+            printf("u have choosen small\n");
+            printf("price: Rs.49\n");
+            break;
+        case 2:
+             printf("u have choosen large\n");
+             printf("price: Rs.250\n");
+        break;
+        }
+        break;
+    case 3:
+        printf("choice: pasta \n");
+         switch (size)
+        {
+        case 1:
+            printf("u have choosen small\n");
+            printf("price: Rs.30\n");
+            break;
+        case 2:
+        printf("u have choosen large\n");
+        printf("price: Rs.100\n");
+        break;
+        }
+        break;
+    case 4:
+        printf("choice: Frenchfries\n");
+         switch (size)
+        {
+        case 1:
+            printf("u have choosen small\n");
+            printf("price: Rs.25\n");
+            break;
+        case 2:
+        printf("u have choosen large\n");
+        printf("price: Rs.80\n");
+        break;
+        }
+        break;
+    case 5:
+        printf("choice: sandwich\n");
+         switch (size)
+        {
+        case 1:
+            printf("u have choosen small\n");
+            printf("price: Rs.49\n");
+            break;
+        case 2:
+        printf("u have choosen large\n");
+        printf("price: Rs.89\n");
+        break;
+        }
+        break;
+    default:
+        printf("you are out of choice\n");
+        break;
+    }
